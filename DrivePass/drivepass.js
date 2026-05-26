@@ -77,7 +77,7 @@ function readSave() {
 			let c = ""
 			if (isPremium[i]) {
 				c = `Set Premium DrivePass ${i+1} Level to 100` 
-				global.data.setUint32(ofs + 4 * i, 150000, true)
+				global.data.setUint32(ofs + 4 * i, 0, true)
 			} else {
 				c = `Set DrivePass ${i+1} Level to 99` 
 				global.data.setUint32(ofs + 4 * i, 149000, true)
